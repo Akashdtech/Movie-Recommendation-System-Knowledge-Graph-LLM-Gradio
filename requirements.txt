@@ -1,0 +1,6 @@
+pandas==1.5.3
+networkx==3.1
+rdflib==6.3.2
+requests==2.31.0
+langchain==0.0.240
+langchain_community==0.0.11
