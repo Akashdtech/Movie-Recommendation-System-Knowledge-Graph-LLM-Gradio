@@ -1,5 +1,5 @@
 # Movie-Recommendation-System-Knowledge-Graph-LLM-AI-Agents-Gradio
-This project constructs a knowledge graph from the TMDB 5000 Movies dataset and utilizes a custom LLM-based approach to recommend similar movies based on shared attributes such as genre, cast, crew, and keywords.
+This project constructs a knowledge graph from the TMDB 5000 Movies dataset and utilizes a custom LLM-based AI agents approach to recommend similar movies based on shared attributes such as genre, cast, crew, and keywords.
 
 Data Loading and Preprocessing:
 
