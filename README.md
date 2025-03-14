@@ -21,6 +21,13 @@ Custom LLM Integration:
 Movie Recommendation System:
 
     Uses the knowledge graph and LLM to suggest movies similar to a given title.
+    Utilizes prompt engineering to refine user queries before searching for recommendations.
+
+Query Refinement:
+
+    Implements refine_query(user_input) to clarify or improve the movie title input.
+    If the input is vague, suggests alternative titles or requests more details.
+    Ensures more accurate recommendations by refining the user input before processing.
 
 Dependencies:
 
@@ -28,18 +35,19 @@ Dependencies:
     !pip install langchain_community
     !pip install networkx
     !pip install rdflib
+    !pip install gradio
 
 Usage:
 
     Prepare the dataset: Ensure the TMDB 5000 Movies dataset files (tmdb_5000_movies.csv and tmdb_5000_credits.csv) are available.
     Run the script: Execute the Python code to construct the knowledge graph and initialize the LLM.
-    Get Movie Recommendations: Call get_similar_movies("Movie Title") to receive a list of similar movies.
+    Get Movie Recommendations: Call get_recommendations("Movie Title") to receive a list of similar movies.
 
 Example:
 
-    movie_title = "The Avengers"
-    similar_movies = get_similar_movies(movie_title)
-    print(similar_movies)
+    user_input = "The Avengers"
+    recommendations = get_recommendations(user_input)
+    print(recommendations)
 
 API Integration:
 
